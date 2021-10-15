@@ -122,12 +122,9 @@ var quiz = {
       }
     }, 1000);
   },
-
-  reset : function () {
-    quiz.now = 0;
-    quiz.score = 0;
-    quiz.draw();
-  }
 };
 window.addEventListener("load", quiz.init);
+
+ 
+
 

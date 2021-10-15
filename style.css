@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 #quizQn {
-  padding: 20px;
+  padding: 28px;
   background: #0f0f0f;
   color: rgb(240, 230, 230);
   font-size: 24px;
@@ -18,7 +18,7 @@
 }
 #quizAns input[type=radio] { display: none; }
 #quizAns label {
-  background: #ecc8ec;
+  background: #e9cae9;
   border: 1px solid #eee;
   border-radius: 10px;
   padding: 10px;
@@ -42,6 +42,8 @@ html, body {
 h1 {
   color: rgb(255, 255, 255);
   text-align: center;
+  margin-top: 150px;
+  margin-bottom: 10px;
 }
 .center {
   display: block;
@@ -50,5 +52,38 @@ h1 {
 }
 .reset{
   padding: 10px;
-  margin: 10px;
+  margin-top: 20px;
+  border: 2px solid #111111;
+}
+audio{
+  position: absolute; left: 30%; top: 5%; 
+  background: #faf6fa;
+  width: 300px;
+  padding: 1px;
+  border: 5px solid #f7f3f3;
+  border-radius: 1px;
+  float: left;
+  margin-left: 0.5em;
+  -moz-box-shadow: rgba(245, 238, 238, 0.5) 3px 3px 5px;
+  -webkit-box-shadow: rgba(250, 243, 243, 0.5) 3px 3px 5px;
+  box-shadow: rgba(250, 249, 249, 0.5) 3px 3px 5px;
+}
+button{
+  position: absolute; left: 45%; top: 5%; 
+font-weight: 100;
+font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  text-align: right;
+  color:  #171718;
+  background: #d4c8d2;
+  width: 320px;
+  height: 65px;
+  border-radius: 1px;
+  border: 7px solid rgb(229, 245, 243);
+  float: left;
+  margin-left: 0.5em;
+  -moz-box-shadow: rgba(247, 242, 242, 0.5) 3px 3px 5px;
+  -webkit-box-shadow: rgba(243, 239, 239, 0.5) 3px 3px 5px;
+  box-shadow: rgba(243, 240, 240, 0.5) 3px 3px 5px;
+  z-index: -1;
 }

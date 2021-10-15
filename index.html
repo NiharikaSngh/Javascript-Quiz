@@ -6,6 +6,19 @@
     </title>
     <link href="style.css" rel="stylesheet">
     <script src="index.js"></script>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>  
+    <script>
+     $(document).ready(function() {
+      $("button").click(function() {
+          $("html, body").animate({
+              scrollTop: $(
+                'html, body').get(0).scrollHeight
+          }, 1700);
+      });
+  });
+    </script>
   </head>
   <body>
     <div class="heading">
@@ -14,5 +27,12 @@
     <div id="quizWrap"></div>
     <img src="https://lh3.googleusercontent.com/proxy/yJTVxW9J-UUt1ExyDI9BCMl7dMmenCSlYpVZtOU9GAanzvXAJwPiDtdXsq-pp-DtvL3q8P1bID4D1slIQW4HxjmOSPq7bDcdkREEtOQyEoM0NYtQ4_yAhgmXZm2Ztf4QsTvLk7QlnjLcrdK9" alt="Disney" height="420px" width="600px" class="center"/> 
     <input type="reset" value="Retake Quiz" onClick="window.location.reload()" class="reset">
+    <audio id="musicplayer" controls autoplay>
+      <source  src="Dwayne Johnson - You're Welcome (from Moana_Official Video).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio> 
+    <div>
+      <button> SCROLL</button>
+    </div>
   </body>
 </html>
