@@ -93,11 +93,11 @@ function play(question, answer, options) {
   var userAnswer = readlineSync.question("Choose you option: ");
 
   if (userAnswer.toUpperCase() === answer.toUpperCase()) {
-    console.log("right!");
+    console.log("Right!!");
     score = score + 1;
   }
   else {
-    console.log("wrong!");
+    console.log("Wrong!!");
   }
 
   console.log("*--------------------------*")
