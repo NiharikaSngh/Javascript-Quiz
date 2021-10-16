@@ -42,7 +42,7 @@ html, body {
 h1 {
   color: rgb(255, 255, 255);
   text-align: center;
-  margin-top: 150px;
+  margin-top: 190px;
   margin-bottom: 10px;
 }
 .center {
@@ -51,12 +51,13 @@ h1 {
   margin-right: auto;
 }
 .reset{
-  padding: 10px;
-  margin-top: 20px;
+  padding: 15px;
+  margin-top: 30px;
   border: 2px solid #111111;
+  margin-right: 1%;
 }
 audio{
-  position: absolute; left: 30%; top: 5%; 
+  position: absolute; left: 30%; top: 5%;
   background: #faf6fa;
   width: 300px;
   padding: 1px;
@@ -70,8 +71,8 @@ audio{
 }
 button{
   position: absolute; left: 45%; top: 5%; 
-font-weight: 100;
-font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  font-family: "Times New Roman", Times, serif;
   font-size: 25px;
   text-align: right;
   color:  #171718;
@@ -86,4 +87,19 @@ font-family: "Times New Roman", Times, serif;
   -webkit-box-shadow: rgba(243, 239, 239, 0.5) 3px 3px 5px;
   box-shadow: rgba(243, 240, 240, 0.5) 3px 3px 5px;
   z-index: -1;
+}
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+.scroll{
+font-family:'Comic Sans MS';
+font-size: 24px;
+line-height:35px;
+color:#0a0a0a;
+background-color:#f3f3f7;
+position: absolute; top: 16%; right: 0%;
 }
