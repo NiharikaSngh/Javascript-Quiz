@@ -116,11 +116,19 @@ var quiz = {
     quiz.now++;
     setTimeout(function(){
       if (quiz.now < quiz.data.length) { quiz.draw(); }
-      else {
-        quiz.hQn.innerHTML = `YOU HAVE SCORED ${quiz.score} OUT OF ${quiz.data.length}.`;
-        quiz.hAns.innerHTML = "";
-      }
-    }, 1000);
+      
+        else if(quiz.score<8 ){
+          quiz.hQn.innerHTML = `CONGRATS !! YOU HAVE SCORED ${quiz.score} OUT OF ${quiz.data.length}. KEEP WATCHING DISNEY.`;
+          quiz.hAns.innerHTML = "";}
+        else if(quiz.score===8){
+          quiz.hQn.innerHTML = `HOORAY A TRUE DISNEY LOVER SPOTTED ! YOU HAVE SCORED ${quiz.score} OUT OF ${quiz.data.length}.`;
+          quiz.hAns.innerHTML = "";}
+        else{
+            quiz.hQn.innerHTML = `UH-OH ! YOU HAVE SCORED ${quiz.score} OUT OF ${quiz.data.length}. NOT-SO-GOOD`;
+            quiz.hAns.innerHTML = "";}
+          
+      },
+     1000);
   },
 };
 window.addEventListener("load", quiz.init);
