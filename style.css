@@ -51,10 +51,11 @@ h1 {
   margin-right: auto;
 }
 .reset{
-  padding: 15px;
-  margin-top: 30px;
+  padding: 10px;
+  margin-top: 12px;
   border: 2px solid #111111;
-  margin-right: 1%;
+  margin-left: 44%;
+  display: none;
 }
 audio{
   position: absolute; left: 30%; top: 5%;
